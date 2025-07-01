@@ -1,0 +1,26 @@
+selector{property:value ;}
+
+h1{
+    
+    color:red;
+}
+p{
+    color: #1e820f;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: arial;
+    font-weight: 700;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    width:600px;
+    font-style: italic;
+    word-spacing: 20%;
+    background-color: #e11199;
+    background-image: url("../images/1045.jpg");
+    border-bottom:2px solid #1e820f;
+}
+a{
+    color:hsl(208, 100%, 97%);
+
+}
