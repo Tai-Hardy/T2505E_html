@@ -1,0 +1,11 @@
+.container-main{
+    display: flex;
+}
+.column-T1{
+    width: calc(20%);
+    background-color: rgb(8, 115, 20);
+    float: left;
+    height: auto;
+}
+
+

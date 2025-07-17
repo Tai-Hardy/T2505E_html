@@ -1,0 +1,45 @@
+ .column-main{
+    display: block;
+    width: 100%;
+.dog-icon{
+   text-align: center;
+}
+.icon{
+     text-align: center;
+}
+
+ .cv-container{
+    display: flex;
+
+} 
+
+.column-left{
+    width: 33.33%;
+    min-width: 292px;
+    background-color: blue;
+    min-height: 200px;
+   
+
+    /* text-align: center; */
+}
+.column-right{
+    flex: 1;
+    /* width: 66.67%; */
+    background-color: green;
+    min-height: 200px;
+}
+.proflie-pic{
+    width: 80%;
+    height:auto;
+    margin-left:auto;
+    margin-inline: auto;
+    margin-right:auto;
+}
+.phone-icon{
+    width: 20px;
+    height:auto;
+}
+.mail-icon{
+    width: 20px;
+    height:auto;
+}
