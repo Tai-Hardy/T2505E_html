@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/form.css">
+
+</head>
+<body>
+    <!-- <header class="section header">
+        <div class="container">
+        </div>     
+        <h1>emily fukada</h1>    
+    </head>
+    <nav class="section nav">
+        <div class="container">   
+           <h2>tokuda</h2>     
+        </div>
+    </nav>
+    <main class="section main">
+        <div class="container">
+             <aside class="a-left">
+                <h2>minami ozawa</h2>
+            </aside> -->
+            <section class="content">
+                <h2>Form demo</h2>
+                <form method="get" action="#">
+                    <div class="form-group">
+                         <label for="name"> Full_Name:</label>
+                         <input type="text" name="Full_name" placeholder="Enter your name." required/>
+                    </div>
+                    <div class="form-group">
+                         <label for="email">Email:</label>
+                         <input type="email" name="email" placeholder="Enter your email." required/>   
+                    </div>
+                    <div class="form-group">
+                          <label for="telephone">Telephone:</label>
+                         <input type="tel" name="telephone" placeholder="Enter your telephone number." required/>
+                    </div>                 
+                    <div class="form-group">
+                         <label for="dob">Date of Birth:</label>
+                         <input type="date" name="dob"/>
+                    </div>
+                    <div class="form-group">
+                         <label for="password">Password:</label>
+                        <input type="password" name="password" placeholder="Enter your password." required/>
+                    </div>
+                    <div class="form-group">
+                         <label for="gender">Gender:</label>
+                         <input type="radio" name="gender" value="male"/>male
+                         <input type="radio" name="gender" value="female"/>female
+                    </div>
+                    <div class="form-group">
+                         <label for="weight">Weight:</label>
+                         <input type="number" name="weight" placeholder="Enter your weight in kg."/>
+                    </div>
+                    <div class="form-group">
+                         <label for="avatar">Avatar:</label>
+                         <input type="file" name="avatar"/>
+                    </div>
+                    <div class="form-group">
+                         <label for="my_color">My Color:</label>
+                         <input type="color" name="my_color"/>
+                    </div>
+                    <div class="form-group">
+                         <label for="my_time">My time:</label>
+                         <input type="time" name="my_time"/>
+                    </div>
+                    <div class="form-group">
+                         <input type="checkbox" name="terms" value="agree" id="terms"/>
+                         <label for="terms">I agree to the terms and conditions</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <select name="city" id="city">
+                            <option value="hanoi">Hanoi</option>
+                            <option value="saigon">Saigon</option>
+                            <option value="danang">Danang</option>
+                            <option value="haiphong">Haiphong</option>
+                            <option value="cantho">Can Tho</option>
+                            <option value="nha_trang">Nha Trang</option>
+                            <option value="quang_ninh">Quang Ninh</option>
+                            <option value="vung_tau">Vung Tau</option>
+                            <option value="phu_quoc">Phu Quoc</option>
+                            <option value="dalat">Dalat</option>
+                            <option value="quang_binh">Quang Binh</option>
+                            <option value="quang_nam">Quang Nam</option>
+                            <option value="quang_ngai">Quang Ngai</option>
+                            <option value="binh_thuan">Binh Thuan</option>
+                            <option value="tien_giang">Tien Giang</option>
+                            <option value="dong_nai">Dong Nai</option>
+                            <option value="long_an">Long An</option>
+                            <option value="tay_ninh">Tay Ninh</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea name="address" rows="5" placeholder="enter your address here."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        <button type="button">button</button>
+                    </div>
+                </form>
+            </section>  
+            <aside class="a-right">
+                <h2>Right Sidebar</h2>
+            </aside>
+        </div>
+    </main>
+    <footer class="section footer">
+        <div class="container">
+            <h2>footer</h2>
+        </div>
+</body>
+</html>
