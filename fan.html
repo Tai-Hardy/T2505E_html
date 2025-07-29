@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAN</title>
+</head>
+<body>
+    <div class="fan_box">
+        <img id="fan" src="img/canhquatquay.webp" width="400px"/>
+    </div>
+    <script type="text/javascript">
+           var dg = 0;
+        // var so_lan_quay = 0;
+        // var max_quay =7 ;
+        setInterval(function(){
+            dg +=100;
+            var f = document.getElementById("fan");
+            f.style.transform = `rotate(${dg}deg)`;
+            if(dg == 360){
+                dg = 0;
+            }
+        },10);
+    </script>
+</body>
+</html>
