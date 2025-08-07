@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/layout.css"/>
+
+</head>
+<body>
+    <main class="section main">
+        <div class="container">
+            <img id="sp_image" src="#">
+            <h1 id="sp_name">vay cuoi cao cap</h1>
+            <p>gia tien: <span id="sp_price">20000</span>$</p>
+            <p>so luong: <span id="sp_qty">3</span></p>
+            <p>rate: <span id="rating">0</span></p>
+        </div>
+    </main>
+    <script type="text/JavaScript">
+        // call api va su dung du lieu tu api vaof giao dien
+        const url = "http://127.0.0.1:5500/data/sanpham.json";
+        fetch(url).then(rs=>rs.json())
+        .then(rs=>{
+     
+        //   var sp = {
+        //     name : "tui xach gucci",
+        //     price : 125,
+        //     qty : 5,
+        //     thumbnail : "img/canhquatquay.webp"
+        // }
+        //lay du lieu cua jason va su dung trong nay
+            var sp_name = document.getElementById("sp_name").innerText = sp.name;
+            var sp_price = document.getElementById("sp_price").innerText = sp.price;
+            var sp_qty = document.getElementById("sp_qty").innerText = sp.qty;
+            var sp_image = document.getElementById("rating").src = sp.review.rating;
+        })
+    </script>
+</body>
+</html>

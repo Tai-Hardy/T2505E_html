@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    transition: visibility 0s linear 0.5s, opacity 0.5s ease; /* Delay visibility change */
+    z-index: 1000;
+}
+
+/* Active state for overlay */
+.popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s; /* No delay when becoming visible */
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transform: scale(0.7); /* Start smaller */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease; /* Spring-like animation */
+}
+
+/* Active state for content */
+.popup-overlay.active .popup-content {
+    transform: scale(1); /* Grow to full size */
+    opacity: 1; /* Become visible */
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.popup-content p {
+    color: #666;
+    margin-bottom: 20px;
+}

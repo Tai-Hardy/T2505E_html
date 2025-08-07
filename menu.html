@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO MENU</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="item" id="item-1" onmouseenter="openmenu(1)" onmouseleave="close(1)">
+                <a href="#">Tin Tuc</a>
+                <ul class="submenu">
+                    <li>chinh tri-xa hoi</li>
+                    <li>tra cuu phuong xa</li>
+                </ul>
+            </li>
+            <li class="item" id="item-2" onmouseenter="openmenu(2)" onmouseleave="close(2)">
+                <a href="#">tai chinh</a>
+                <ul class="submenu">
+                    <li>tien</li>
+                    <li>va tien</li>
+                </ul>
+            </li>
+            <li class="item" id="item-3" onmouseenter="openmenu(3)" onmouseleave="close(3)">
+                <a href="#">bong da</a>
+                <ul class="submenu">
+                    <li>thang</li>
+                    <li>or thua</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script type="text/javascript">
+        function openmenu(n){
+            var item = document.getElementById("item" + n);
+            item.classList.add("active");
+        }
+        function closemenu(n){
+            var item = document.getElementById("item" + n);
+            item.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

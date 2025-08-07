@@ -1,0 +1,9 @@
+{
+    "name": "vay cuoi",
+    "price": 1000,
+    "qty": 10,
+    "thumbnail": "img/canhquatquay.webp",
+    "review":{
+        "rating": 5,      
+    }
+}
